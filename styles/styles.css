@@ -1,0 +1,250 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    height: 110vh;
+    font-family: "roboto";
+    background-color: rgb(157, 193, 202);
+    transition: 1s all ease;
+}
+:root{
+    --primary-color:#009FC3;
+    --color: black;
+    --text-color:white;
+}
+.images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.image{
+    width: 350px;
+    border: 24px groove var(--primary-color);
+    border-radius: 580rem;
+}
+.image:hover{
+    cursor: pointer;
+}
+.heading{
+    font-size:40px;
+    font-weight: bolder;
+    color: var(--color);
+}
+.about{
+    margin-top: 40px;
+    /* padding: 0 80px; */
+}
+.personal{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    height: 10vh;
+    width: 25vw;
+    border-radius:0 50px 50px 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.personaldata{
+    color: var(--color);
+}
+span{
+    font-weight: bolder;
+    font-size: 25px;
+}
+.name{
+    font-size: 22px;
+}
+.age{
+    font-size: 22px;
+}
+.email{
+    font-size: 22px;
+}
+.phone{
+    font-size: 22px;
+}
+.skillsheading{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    height: 10vh;
+    width: 25vw;
+    border-radius:0 50px 50px 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skill{
+    font-size: 22px;
+}
+.educationheading{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    height: 10vh;
+    width: 25vw;
+    border-radius:0 50px 50px 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.matric{
+    font-size: 27px;
+}
+.aboutmatric{
+    font-size: 20px;
+}
+.experience{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    height: 10vh;
+    width: 25vw;
+    border-radius:0 50px 50px 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.allabout{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+.work{
+    display: flex;
+    flex-direction: column;
+    margin: 45px;
+}
+.position{
+    font-size:27px ;
+    font-weight: bold;
+}
+.nextposition{
+    font-size: 25px;
+    font-weight: lighter;
+}
+.duration{
+    font-size:27px ;
+    font-weight: bold;
+}
+.durationpart{
+    font-size: 25px;
+    font-weight: lighter;
+}
+.companyabc{
+    margin-top: 40px;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+.durationofcompany{
+    font-size:27px ;
+    font-weight: bold;
+}
+.durationspan{
+    font-size: 25px;
+    font-weight: lighter;
+}
+.aboutcompany{
+    font-size: 20px;
+}
+@media (max-width:1300px){
+    .allabout{
+        display: flex;
+       gap: 20%;
+    }
+}
+@media (max-width:1100px){
+    .personal{
+        width: 32vw;
+    }
+    .skillsheading{
+        width: 32vw;
+    }
+    .educationheading{
+        width:32vw;
+    }
+    .experience{
+        width: 32vw;
+    }
+}
+@media (max-width:860px){
+    .allabout{
+        display: flex;
+        gap: 0;
+        gap: 5%;
+    }
+    .personal{
+        width: 35vw;
+    }
+    .skillsheading{
+        width: 35vw;
+    }
+    .educationheading{
+        width:35vw;
+    }
+    .experience{
+        width: 35vw;
+    }
+}
+@media (max-width:730px){
+    .allabout{
+        padding: 0%;
+        padding: 0 40px;
+    }
+}
+ @media (max-width:575px){
+    .allabout{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0%;
+    }
+    .work{
+        margin: 0%;
+        text-align: center;
+
+    }
+    .experiencediv{
+        display: flex;
+        justify-content: center;
+        /* margin-left: 40px; */
+    }
+    .personal{
+        width: 55vw;
+    }
+    .skillsheading{
+        width: 55vw;
+    }
+    .educationheading{
+        width:55vw;
+    }
+    .experience{
+        width:55vw;
+    }
+}
+@media (max-width:529px){
+    .experience{
+        width: 60%;
+    }
+}
+@media (max-width:505px){
+    .experience{
+        width: 62%;
+    }
+    .personal{
+        width: 100%;
+    }
+    .skillsheading{
+        width: 100%;
+    }
+    .educationheading{
+        width:100%;
+    }
+}
+@media (max-width:670px){
+    .allabout{
+        display: flex;
+        gap: 0%;
+        padding: 0%;
+    }
+}

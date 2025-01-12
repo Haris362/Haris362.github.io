@@ -1,0 +1,127 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/* Home section text styling */
+.home_section{
+    padding: 200px 150px;
+    min-height: 40vh;
+
+}
+.home_section{
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    color: var(--primary-color);
+    font-size: 80px;
+}
+h3{
+    color: var(--text-color);
+    padding-top:0px;
+    font-size: 30px;
+}
+.home_text_span{
+    color: var(--primary-color);
+}
+.home_text{
+    color: var(--text-color);
+    font-weight: 500;
+    padding-top:10px;
+    font-size:clamp(3rem 3vw 3rem);
+}
+.home_section_text_icons_buttons{
+    padding-top: 70px;  
+    
+}
+/* Home section text styling End*/
+/* Icons styling */
+.home_icons{
+    color: var(--primary-color);
+    padding-top:20px ;
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+}
+.twitter ,.linked_in, .instagram,.telegram{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--primary-color);
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+}
+.home_icons a:hover{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    cursor: pointer;
+    transform: scale(1.2)translateY(-5px);
+    transition: 0.4s all ease;
+    box-shadow: 3px 3px 15px var(--primary-color);
+}
+/* Icons styling End*/
+/* Button styling */
+.buttons{
+    padding-top:20px;
+    display: flex;
+    gap: 20px;
+}
+.hire-button{
+    width: 140px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 2px solid var(--primary-color);
+    border-radius: 40px;
+    background-color: var(--primary-color);
+    box-shadow: 1px 1px 14px 1px var(--primary-color);
+    cursor: pointer;
+}
+.contact-button{
+    width: 160px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 2px solid var(--primary-color);
+    border-radius: 40px;
+    background-color: transparent;
+    color: var(--primary-color);
+    box-shadow: 1px 1px 14px 1px var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+.hire-button:hover{
+    box-shadow: 3px 3px 20px 4px var(--primary-color);
+}
+.contact-button:hover{
+    box-shadow: 3px 3px 20px 4px var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    transform: scale(1.1);
+    transition: 0.3s all ease;
+    color:black;
+}
+/* Button Styling End */
+/* Image Styling */
+.home-img{
+    width: 550px;
+    height: 550px;
+    border: 3px solid var(--primary-color);
+    border-radius: 60%;
+    box-shadow: 1px 1px 35px 1px var(--primary-color);
+}
+.home-img:hover{
+    box-shadow:1px 1px 35px 15px var(--primary-color) ;
+    cursor: pointer;
+}
+/* Image Styling end*/
+@media (max-width:1375px){
+    .home_section{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;   
+        padding-top: 14rem;
+    }   
+}
+
