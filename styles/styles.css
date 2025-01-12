@@ -9,7 +9,8 @@ body{
     transition: 1s all ease;
 }
 :root{
-    --primary-color:#009FC3;
+    /* --primary-color:#009FC3; */
+    --primary-color:#00A783;
     --color: black;
     --text-color:white;
 }
