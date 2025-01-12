@@ -2,13 +2,6 @@
     margin: 0%;
     padding: 0%;
 }
-:root{
-    --primary-color:#0FF85B;
-    ---bg-color:black;
-    --text-color:white;
-    --main-color:#001005;
-    }
-
 .about-section{
     background-color: var(--main-color);
     padding: 150px 150px;
