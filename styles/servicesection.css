@@ -120,7 +120,7 @@ body{
 }
 @media (max-width:1532px){
     .Service-section{
-        padding: 250px 0px;
+        /* padding: 250px 0px; */
         padding-top: 0%;
     }
     .backend-card-div{

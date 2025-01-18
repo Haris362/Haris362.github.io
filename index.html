@@ -21,12 +21,15 @@
     <link rel="stylesheet" href="./styles/servicesection.css">
     <link rel="stylesheet" href="./styles/contactsection.css">
     <link rel="stylesheet" href="./styles/footersection.css">
+    <link rel="icon" href="./images/726107.png" type="image/x-icon">
     <title>Portfolio</title>
 </head>
 <body>
      <!-- Nav Bar -->
     <header class="header">
         <a class="logo">Muhammad <span class="logo_span"> &nbsp;Haris</span></a>
+        <input type="checkbox" id="check" class="check">
+        <label for="check" class="menu-icon">&#9776;</label>
         <nav class="navbar">
             <a class="home" href="#home">Home</a>
             <a class="about" href="#about">About</a>
@@ -127,11 +130,17 @@
                 <input type="hidden" name="access_key" value="09b85222-c53e-4106-9967-05809596adf2">
                 <div class="name-input-div">
                 <input type="text" name="name" required="required"  class="contact-inputs">
-                <span>Name</span>
+                <span class="name-span">Name</span>
             </div>
-                <input type="email" name="email" required="" placeholder="Email" class="contact-inputs">
-                <input type="phonenumber" name="phonenumber" placeholder="phonenumber" required="" class="contact-inputs">
-                <textarea cols="65" rows="12" name="message" required="" placeholder="Message" class="contact-input"></textarea>
+            <div class="email-div">
+                <input type="email" name="email" required="required" class="contact-inputs">
+                <span class="email-span">Email</span>
+                </div>
+                <div class="Phonenumber-div">
+                <input type="phonenumber" name="phonenumber" required="" class="contact-inputs">
+                <span class="phone-span">Phone Number</span>
+                </div>
+                <textarea cols="15" rows="15" name="message"  placeholder="Message" required="" class="contact-input"></textarea>
                 <button type="submit" class="submitbutton">Submit Form</button>
             </form>
     </div>

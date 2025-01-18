@@ -1,0 +1,84 @@
+:root{
+    --bg-color:#260821;
+    --text-color:white;
+    --primary-color:rgb(17,246,255);
+    --style-color:#2A2E34;
+    --main-padding:0 15%;
+    --main-color:rgb(42,46,51);
+}
+.service-card-div{
+    padding-top: 120px;
+    padding-left: 300px;
+    display: flex;
+    gap: 3%;
+}
+.graphic-designer:hover{
+    background-color: var(--style-color);
+    transform: scale(1.1);
+    transition: 0.7s ease;
+
+
+}
+.servicesection{
+    margin-top: 0%;
+    height: 100vh;
+    font-weight: lighter;
+    background: var(--bg-color); 
+}
+.animateservices{
+    padding-top: 5%;
+}
+.what{
+    padding-top:6%;
+    color:lightslategray;
+    top: 5%;
+    display: flex;
+    justify-content: center;
+    
+}
+.serve{
+    padding-top:1.2%;
+    color: var(--primary-color);
+    font-weight: bolder;
+    font-size: 37px;
+    display: flex;
+    justify-content: center;
+    
+}
+.graphic-designer{
+    background-color: var(--style-color);
+    border: 2px solid var(--main-color);
+    border-radius: 20px;
+    top: 42px;
+    width: 27%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3%;
+}
+.graph{
+    gap: 0;
+}
+#book{
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-size:  60px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    width: 150px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.graphic-heading{
+    color: var(--text-color);
+}
+.graphic-text{
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

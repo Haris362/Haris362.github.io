@@ -1,0 +1,88 @@
+:root{
+    --bg-color:#260821;
+    --text-color:white;
+    --primary-color:rgb(17,246,255);
+    --style-color:#2A2E34;
+    --main-padding:0 15%;
+    --main-color:rgb(67, 98, 114);
+}
+
+.contact-section{
+    background-color: var(--style-color);
+    height: 80vh;
+    padding: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ask-question{
+  
+    font-weight: lighter;
+    font-size: 20px;
+    color: var(--text-color-color);
+    display: flex;
+    justify-content: center;
+}
+.contact-me{
+   font-size: 45px;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+}
+.inputs{
+    padding: 70px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    
+}
+input{
+    color: var(--text-color);
+    width: 70%;
+    height: 4vh;
+    border: 2px solid var(--bg-color);
+    border-radius: 5px;
+    background-color: var(--bg-color);
+}
+.your-msg{
+
+    color: var(--text-color);
+    border: 2px solid var(--bg-color);
+    border-radius: 5px;
+    background-color: var(--bg-color);
+}
+.ending-button{
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: bolder;
+    width: 10rem;
+    height: 50px;
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px var(--primary-color);
+}
+.ending-button:hover{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.7s ease;
+    overflow: hidden;
+}
+.ending-button::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    /* transform: skewX(45deg);   */
+    background-color: var(--primary-color);
+    z-index: -1; 
+    transition: all 1s;
+}
+.ending-button:hover::after {
+    width: 160%;
+}

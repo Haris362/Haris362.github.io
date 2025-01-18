@@ -1,0 +1,311 @@
+:root{
+    --bg-color:#260821;
+    --text-color:white;
+    --primary-color:rgb(17,246,255);
+    --style-color:#2A2E34;
+    --main-padding:0 15%;
+    --main-color:rgb(42,46,51);
+}
+.portfolio-section{
+    height: 130vh;
+    background-color: var(--bg-color);
+}
+.portfolio-head{
+    text-align: center;
+    padding-top: 7%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.whatido{
+    color: gray;
+    font-weight: lighter;
+    font-size: 20px;
+}
+.profile{
+    color: var(--primary-color);
+    font-size: 40px;
+}
+.setofpicture{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.firstimages{
+    width: 33%;
+    position: relative;
+    display: flex;
+    justify-content: center;align-items: center;
+    transition: all 0.7s ease;
+}
+.firstimages:hover{
+    cursor: pointer;
+   
+    transition: 0.7s ease;
+}
+.softwareengineer{
+    padding-left: 0px; 
+    border: 3px solid var(--primary-color);
+    border-radius: 30px;
+}
+.softwaredeveloper:hover{
+    cursor: pointer;
+    transition: 0.7s ease;
+
+}
+.firstimages::after{
+    color: var(--text-color);
+    font-size: 40px;
+    content: "Graphic Designer" ;
+    height: 100%;
+    background:linear-gradient(to top,#088989,transparent);
+    position: absolute;
+    height: 80%;
+    width: 0%;
+    top: 20%;
+    opacity: 0;
+    /* border: 3px solid var(--primary-color); */
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s ease;
+}
+.firstimages:hover::after{
+    width: 95%;
+    opacity: 1;
+}
+.softwaredeveloper{
+    height: 100%;
+    padding-left: 0px; 
+    border: 3px solid var(--primary-color);
+    border-radius: 30px;
+}
+.softwaredeveloper:hover{
+   
+    transition: 0.7s ease;
+}
+.secondimage{
+    width: 33%;
+    position: relative;
+    display: flex;
+    justify-content: center;align-items: center;
+    transition: all 0.7s ease;
+}
+.softwareengineer{
+    padding-left: 0px; 
+    border: 3px solid var(--primary-color);
+    border-radius: 30px;
+}
+.secondimage:hover{
+    cursor: pointer;
+   
+    transition: 0.7s ease;
+}
+.secondimage::after{
+    color: var(--text-color);
+    font-size: 40px;
+    content: "Graphic Designer" ;
+    height: 100%;
+    background:linear-gradient(to top,#088989,transparent);
+    position: absolute;
+    height: 80.5%;
+    width: 0%;
+    top: 20%;
+    opacity: 0;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s ease;
+}
+.secondimage:hover::after{
+    width: 101.8%;
+    opacity: 1;
+}
+.softwareengineer{
+    height: 100%;
+    padding-left: 0px; 
+    border: 3px solid var(--primary-color);
+    border-radius: 30px;
+}
+.softwareengineer:hover{
+   
+    transition: 0.7s ease;
+}
+.thirdimage{
+    width: 33%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.7s ease;
+}
+.websitedeveloper{
+    padding-left: 0px; 
+    border: 3px solid var(--primary-color);
+    border-radius: 30px;
+}
+.thirdimage:hover{
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+.thirdimage::after{
+    color: var(--text-color);
+    font-size: 40px;
+    content: "Graphic Designer" ;
+    height: 100%;
+    background:linear-gradient(to top,#088989,transparent);
+    position: absolute;
+    height: 80%;
+    width: 0%;
+    top: 20%;
+    opacity: 0;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s ease;
+}
+.thirdimage:hover::after{
+    width: 99%;
+    opacity: 1;
+}
+.second-set-of-picture{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.firstpicture{
+    padding-top: 48px;
+    width: 33%;
+    position: relative;
+    display: flex;
+    justify-content: center;align-items: center;
+    transition: all 0.7s ease;
+}
+
+.second-software-developer-picture{
+    height: 38vh;
+    padding-left: 0px; 
+    border: 3px solid var(--primary-color);
+    border-radius: 30px;
+}
+.second-software-developer-picture:hover{
+    cursor: pointer;
+    transition: 0.7s ease;
+
+}
+
+.firstpicture::after{
+    color: var(--text-color);
+    font-size: 40px;
+    content: "Graphic Designer" ;
+    height: 100%;
+    background:linear-gradient(to top,#088989,transparent);
+    position: absolute;
+    height: 80%;
+    width: 0%;
+    top: 20%;
+    opacity: 0;
+    /* border: 3px solid var(--primary-color); */
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s ease;
+}
+.firstpicture:hover::after{
+    width: 98.7%;
+    opacity: 1;
+}
+.secondpicture{
+    padding-right: 0%;
+    padding-top: 48px;
+    width: 33%;
+    position: relative;
+    display: flex;
+    justify-content: center;align-items: center;
+    transition: all 0.7s ease;
+}
+.second-software-engineer-picture{
+    height: 38vh;
+    width: 100%;
+    padding-left: 0px; 
+    border: 3px solid var(--primary-color);
+    border-radius: 30px;
+}
+.second-software-engineer-picture:hover{
+    cursor: pointer;
+    transition: 0.7s ease;
+
+}
+.secondpicture::after{
+    color: var(--text-color);
+    font-size: 40px;
+    content: "Graphic Designer" ;
+    height: 100%;
+    background:linear-gradient(to top,#088989,transparent);
+    position: absolute;
+    height: 79.7%;
+    width: 0%;
+    top: 20%;
+    opacity: 0;
+    /* border: 3px solid var(--primary-color); */
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s ease;
+}
+.secondpicture:hover::after{
+    width: 99%;
+    opacity: 1;
+}
+.thirdpicture{
+    padding-top: 40px;
+    width: 33%;
+    position: relative;
+    display: flex;
+    justify-content: center;align-items: center;
+    transition: all 0.7s ease;
+}
+.second-website-developer-picture{
+    height: 38vh;
+    width: 195%;
+    padding-left: 0px; 
+    border: 3px solid var(--primary-color);
+    border-radius: 30px;
+}
+.second-website-developer-picture:hover{
+    cursor: pointer;
+    transition: 0.7s ease;
+
+}
+
+.thirdpicture::after{
+    color: var(--text-color);
+    font-size: 40px;
+    content: "Graphic Designer" ;
+    height: 100%;
+    background:linear-gradient(to top,#088989,transparent);
+    position: absolute;
+    height: 78.7%;
+    width: 0%;
+    top: 20%;
+    opacity: 0;
+    /* border: 3px solid var(--primary-color); */
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s ease;
+}
+.thirdpicture:hover::after{
+    width: 99%;
+    opacity: 1;
+}
+.portfolio-text{
+    color: white;
+}

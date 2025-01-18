@@ -1,0 +1,103 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+:root{
+    --bg-color:#260821;
+    --text-color:white;
+    --primary-color:rgb(17,246,255);
+    --style-color:#2A2E34;
+    --main-padding:0 15%;
+    --main-color:grey;
+}
+body{
+    margin-top: 0%;
+    background-color: var(--bg-color);
+    font-family: "Roboto";
+    font-weight: bolder;
+    position: relative;
+    
+}
+.header{
+    /* position: fixed;
+    width: 80%; */
+     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+     background-color: var(--bg-color);
+    z-index: 1;
+    backdrop-filter: blur(0px);
+    box-shadow: 3px 3px 2px var(--main-color);
+    padding: var(--main-padding);
+}
+.name{
+    color: var(--primary-color);
+    font-size: 50px;
+    font-weight: bolder;
+    display: flex;
+    gap: 1%;
+}
+.namestyle{
+    color: var(--text-color);
+    margin-bottom: 1%;
+    
+}
+.navbar{
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    font-size: 25px;
+    gap: 18px;
+    
+}
+.navbar a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.navbar a:hover{
+     color: var(--primary-color); 
+     cursor: pointer;
+     transition: all 1s;
+
+}
+
+@media (max-width:1120px){
+    .home-section{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .navbar{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--bg-color);
+        background-color: var(--text-color);
+        border: 2px solid var(--bg-color);
+        border-radius: 10px;
+        top: -270%;
+    }
+    .menuandclose{
+        display: flex;
+    }
+    .menuandclose .close{
+       margin-left: 560px;
+    }
+    #check:checked~.menuandclose .menu{
+        display: none;
+    }
+    #check:checked~.menuandclose .close{
+        display: block;
+    }
+    .menuandclose .menu{
+        display: block;
+        margin-left: 560px; 
+        
+    }
+
+}

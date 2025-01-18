@@ -3,36 +3,41 @@
     padding: 0%;
 }
 :root{
-    --primary-color:#fd5d00;
+    --primary-color:#19cc12;
     ---bg-color:black;
     --text-color:white;
     --main-color:#001005;
+    --new-color:grey;
     }
 body{
     background-color: var(---bg-color);
     font-family: 'roboto';
 }
 .header{
-    height: 50px;
+    height: 90px;
     width: 100%;
     color: var(--text-color);
     display: flex;
     justify-content: space-between;
-    padding: 30px 150px;
+    align-items: center;
+    position: fixed;
     font-size: 25px;
     background:transparent;
-    backdrop-filter: blur(20px);  
-    position: fixed;
+    backdrop-filter: blur(20px); 
+    z-index: 10;
 }
 .logo{
     display: flex;
     align-items: center;
+    padding-left: 150px;
 }
 /* Navbar Styling */
 .navbar{
     display: flex;
     align-items: center;
     gap: 30px;
+    background:transparent;
+    backdrop-filter: blur(20px);  
     padding-right: 260px;
 }
 .navbar a{
@@ -65,31 +70,48 @@ body{
 /* Logo Styling End */
 /* Scrollbar styling */
 ::-webkit-scrollbar{
-    width: 30px;
+    width: 20px;
 }
 ::-webkit-scrollbar-thumb{
     background-color: var(--primary-color);
-    border-radius: 40px;
+    border-radius: 30px;
     height: 35%;
 }
-@media (max-width:990px){
+#check{
+    display: none;
+}
+.menu-icon{
+    margin-right: 20px;
+    display: none;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+@media (max-width:1440px){
     .navbar{
-        height:250%;
-        width:50%;
-        background-color:rgba(0, 250, 0, 0.253);
-        backdrop-filter: blur(30px);
+        height:0px;
+        width:0%;
+        background:black;
+        backdrop-filter: blur(80px);
         position: absolute;
-        top: 110px;
-        right: 24%;
-        left: 100%;
+        top:90px;
         border: 2px solid var(--primary-color);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* padding: 0px 150px; */
+        padding: 0%;
+        top: -350%;
+        /* display: none; */
+        z-index: 3;
     }
-    .navbar a{
-        padding-left: 250px;
+    .menu-icon{
+        display: block;
+    }
+    #check:checked + .menu-icon + .navbar{
+        height:260px;
+        width:100%;
+        top: 90px;
+        transition: 0.7s all ease;
     }
 }

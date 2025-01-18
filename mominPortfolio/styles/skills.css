@@ -1,0 +1,296 @@
+:root{
+    --bg-color:#260821;
+    --text-color:white;
+    --primary-color:rgb(17,246,255);
+    --style-color:#2A2E34;
+    --main-padding:0 15%;
+    --main-color:rgb(42,46,51);
+}
+.skills-section{
+    /* padding-top: 35px; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--style-color);
+    height: 100vh;
+    padding-left: 150px;
+}
+.expedita{
+    display: flex;
+}
+h3{
+    margin-top: 30px;
+    color: rgb(189, 179, 179);
+    font-weight: lighter;
+    text-align: center;
+}
+
+.p1{
+    font-size: 50px;
+    color: var(--primary-color);
+    text-align: center;
+}
+.two-sections-skills{
+    display: flex;
+    gap: 350px;
+    font-size: 40px;
+    color: var(--text-color);
+}
+.left-section{
+
+    padding: 0%;
+    margin: 0%;
+}
+.skills-first-text{
+    font-size: 60px;
+    color: var(--text-color);
+    padding-top: 0px ;
+    padding-left: 260px;
+}
+.languages-skills{
+    padding-top: 7%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.html{
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+.p2{
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 400;
+    /* padding-top: 70px; */
+    display: flex;
+    gap: 10rem;
+    
+}
+.p3{
+    padding-top: 0px;
+    padding-left: 7%;
+    color: var(--bg-color);
+    /* border: 2px solid black;
+    width: 30rem;
+    padding-left: 195px; */
+}
+.dot{
+    display: flex;
+    gap: 190px;
+    color: var(--style-color);
+}
+.html-expereince{
+    width: 100%;
+    display: flex;
+    height: 19px;
+    background-color: var(--bg-color);
+    color: transparent;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.html-expereince-div{
+    width: 80%;
+    height: 19px;
+    background-color: var(--primary-color);
+    color: transparent;
+    z-index: 1;
+    position: absolute;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px 1px var(--primary-color);
+    border-radius: 10px 0px 0px 10px;
+}
+.html-expereince-div:hover{
+    background-color: var(--style-color);
+    color: white;
+    /* transform: scale(1.1); */
+    transition: 0s ease;
+    cursor: pointer;
+}
+
+.html-expereince-div::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: 0px;
+     /* transform: skewX(45deg);  */
+    background-color: var(--primary-color);
+    z-index: 1;
+    transition: all 07s;
+  }
+  
+  .html-expereince-div:hover::after {
+    width: 160%;
+    
+  }
+  .css{
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+.dot1, .dot2{
+    color: var(--style-color);
+}
+.css-text{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+.html-expereince2{
+   /* margin-top: 50px; */
+    width: 100%;
+    display: flex;
+    height: 18px;
+    background-color: var(--bg-color);
+    color: transparent;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.html-expereince-div2{
+    /* margin-top: 0px; */
+    width: 85%;
+    height: 18px;
+    background-color: var(--primary-color);
+    color: transparent;
+    z-index: 1;
+    position: absolute;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px 1px var(--primary-color);
+    border-radius: 10px 0px 0px 10px;
+}
+.html-expereince-div2:hover{
+    background-color: var(--style-color);
+    color: white;
+    /* transform: scale(1.1); */
+    transition: 0.7s ease;
+}
+
+.html-expereince-div2::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: 0px;
+     /* transform: skewX(45deg);  */
+    background-color: var(--primary-color);
+    z-index: 1;
+    transition: all 07s;
+  }
+  
+  .html-expereince-div2:hover::after {
+    width: 160%;
+  }
+  .javascript{
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+  .javascript-text{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .html-expereince3{
+    /* margin-top: 50px; */
+     width: 100%;
+     display: flex;
+     height: 19px;
+     background-color: var(--bg-color);
+     color: transparent;
+     overflow: hidden;
+     border-radius: 10px;
+ }
+ .html-expereince-div3{
+     /* margin-top: 0px; */
+     width: 20%;
+     height: 19px;
+     background-color: var(--primary-color);
+     color: transparent;
+     z-index: 1;
+     position: absolute;
+     overflow: hidden;
+     box-shadow: 1px 1px 10px 1px var(--primary-color);
+     border-radius: 10px 0px 0px 10px;
+ }
+ .html-expereince-div3:hover{
+     background-color: var(--style-color);
+     color: white;
+     /* transform: scale(1.1); */
+     transition: 0.7s ease;
+ }
+ 
+ .html-expereince-div3::after {
+     content: "";
+     position: absolute;
+     height: 100%;
+     width: 0%;
+     top: 0;
+     left: 0px;
+      /* transform: skewX(45deg);  */
+     background-color: var(--primary-color);
+     z-index: 1;
+     transition: all 07s;
+   }
+   
+.html-expereince-div3:hover::after {
+     width: 160%;
+   }
+.proffesional-skills{
+    display: flex;
+   }
+.professional{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.box{
+    position: relative;
+    margin: 10px 0;
+    flex: 1 1 15rem;
+}
+.box .text{
+    text-align: center;
+    color: #ffff;
+    font-size: 1rem;
+}
+.box .text big{
+    font: 400;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.box .text small{
+    display: block;
+    font-weight: 600;
+}
+.circles{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--text-color);
+}
+.circles .points{
+    width: 2px;
+    height: 10px;
+    background-color: var(--bg-color);
+    position: absolute;   
+    transform: rotate(calc(var(--i)*120deg)) translateY(-45px); 
+    animation: glow 0.04s linear forwards;
+    animation-delay: calc(var(--i)*0.05s);
+}
+@keyframes glow{
+    0%{
+        background: var(--bg-color);
+        box-shadow: none;
+    }
+    100%{
+        background: var(--primary-color);
+        box-shadow: var(--main-color);
+    }
+}
